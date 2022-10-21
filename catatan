@@ -2,3 +2,11 @@ zmdbintegrityreport
 
 https://zimbra.github.io/installguides/latest/upgrade.html
 
+/opt/zimbra/libexec/zmcheckexpiredcerts -days 1 -verbose
+
+zmprov mcf zimbraMtaCommandDirectory /opt/zimbra/common/sbin
+zmprov mcf zimbraMtaDaemonDirectory /opt/zimbra/common/libexec
+zmprov mcf zimbraMtaMailqPath /opt/zimbra/common/sbin/mailq
+zmprov mcf zimbraMtaManpageDirectory /opt/zimbra/common/share/man
+zmprov mcf zimbraMtaNewaliasesPath /opt/zimbra/common/sbin/newaliases
+zmprov mcf zimbraMtaSendmailPath /opt/zimbra/common/sbin/sendmail
